@@ -77,10 +77,6 @@ Este es el paso más complejo. Deberás crear credenciales OAuth en la [Consola 
 * Usa el **URI de redireccionamiento autorizado** que te proporciona N8N: `http://localhost:5678/rest/oauth2-credential/callback`.
 * Copia el **Client ID** y el **Client Secret** en la configuración de la credencial de Gmail en N8N.
 
-> Si recibes este error, significa que olvidaste añadir tu correo a la lista de "Usuarios de Prueba" en la Pantalla de Consentimiento de Google Cloud.
-
-![Error de Acceso Denegado 403](URL_DE_TU_IMAGEN_DEL_ERROR_403)
-
 ### 4. Importar el Flujo de Trabajo
 * En la pantalla principal de N8N, ve a **Workflows > Import from File**.
 * Selecciona el archivo `workflow.json` que descargaste.
@@ -89,7 +85,7 @@ Este es el paso más complejo. Deberás crear credenciales OAuth en la [Consola 
 * Una vez importado, revisa que cada nodo tenga las credenciales correctas seleccionadas.
 * Haz clic en el interruptor en la esquina superior izquierda para poner el flujo en modo **"Active"**.
 
-![Activación del Flujo de Trabajo](URL_DE_TU_IMAGEN_DE_ACTIVACION_DEL_FLUJO)
+<img width="813" height="63" alt="Captura de pantalla 2025-10-20 192241" src="https://github.com/user-attachments/assets/8efdb738-0733-4199-89d7-6006ebc8ba59" />
 
 ---
 
@@ -106,10 +102,3 @@ Una vez activo, el flujo de trabajo se ejecutará en segundo plano. Cada vez que
 * **Documentación de N8N:** [Instalación con Docker](https://docs.n8n.io/hosting/installation/docker/)
 * **Video Tutorial:** [N8N Beginner Crash Course](https://www.youtube.com/watch?v=3VqVf0N0bcs)
 * **Google Gemini:** [Página Oficial de Gemini](https://gemini.google.com/)
-
-### 2. Iniciar N8N con Docker
-
-En tu terminal, navega a la carpeta del proyecto y ejecuta:
-
-```bash
-docker-compose up -d
