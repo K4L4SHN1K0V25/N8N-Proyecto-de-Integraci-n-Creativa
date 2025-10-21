@@ -44,7 +44,7 @@ Sigue estos pasos para poner en marcha el flujo de trabajo.
 
 Primero, obtén los archivos de este repositorio, que incluyen:
 
-* `workflow.json` (el flujo de N8N)
+* `n8narchivo.json` (el flujo de N8N)
 * `docker-compose.yml` (para iniciar N8N)
 * `README.md` (este archivo)
 
@@ -79,7 +79,7 @@ Este es el paso más complejo. Deberás crear credenciales OAuth en la [Consola 
 
 ### 4. Importar el Flujo de Trabajo
 * En la pantalla principal de N8N, ve a **Workflows > Import from File**.
-* Selecciona el archivo `workflow.json` que descargaste.
+* Selecciona el archivo `n8narchivo.json` que descargaste.
 
 ### 5. Activar el Flujo
 * Una vez importado, revisa que cada nodo tenga las credenciales correctas seleccionadas.
