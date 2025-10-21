@@ -48,6 +48,59 @@ Primero, obtén los archivos de este repositorio, que incluyen:
 * `docker-compose.yml` (para iniciar N8N)
 * `README.md` (este archivo)
 
+* Esto iniciará una instancia de N8N. Puedes acceder a ella en tu navegador visitando `http://localhost:5678`.
+
+![N8N ejecutándose en Docker](URL_DE_TU_IMAGEN_DE_DOCKER_LOGS)
+
+### 3. Configurar las Credenciales en N8N
+Necesitarás configurar dos tipos de credenciales.
+
+#### a) Credencial de Google Gemini
+* En el menú de N8N, ve a **Credentials > Add credential**.
+* Busca y selecciona **Google Gemini (PaLM) API**.
+* Pega la clave de API que obtuviste de Google AI Studio.
+
+![Configuración de Credencial de Gemini](URL_DE_TU_IMAGEN_DE_GEMINI_CREDENTIALS)
+
+#### b) Credencial de Gmail (OAuth 2.0)
+Este es el paso más complejo. Deberás crear credenciales OAuth en la [Consola de Google Cloud](https://console.cloud.google.com/).
+
+* Crea un nuevo proyecto, habilita la **API de Gmail** y configura la **Pantalla de Consentimiento de OAuth**.
+* Asegúrate de añadir tu correo como **Usuario de Prueba**.
+* Crea un **ID de cliente de OAuth** de tipo "Aplicación web".
+* Usa el **URI de redireccionamiento autorizado** que te proporciona N8N: `http://localhost:5678/rest/oauth2-credential/callback`.
+* Copia el **Client ID** y el **Client Secret** en la configuración de la credencial de Gmail en N8N.
+
+> Si recibes este error, significa que olvidaste añadir tu correo a la lista de "Usuarios de Prueba" en la Pantalla de Consentimiento de Google Cloud.
+
+![Error de Acceso Denegado 403](URL_DE_TU_IMAGEN_DEL_ERROR_403)
+
+### 4. Importar el Flujo de Trabajo
+* En la pantalla principal de N8N, ve a **Workflows > Import from File**.
+* Selecciona el archivo `workflow.json` que descargaste.
+
+### 5. Activar el Flujo
+* Una vez importado, revisa que cada nodo tenga las credenciales correctas seleccionadas.
+* Haz clic en el interruptor en la esquina superior izquierda para poner el flujo en modo **"Active"**.
+
+![Activación del Flujo de Trabajo](URL_DE_TU_IMAGEN_DE_ACTIVACION_DEL_FLUJO)
+
+---
+
+## 💡 Uso
+Una vez activo, el flujo de trabajo se ejecutará en segundo plano. Cada vez que recibas un nuevo correo, se disparará el proceso:
+
+1.  **Gemini** analizará si el correo es de `jobalerts-noreply@linkedin.com` y contiene "Ingeniero de software".
+2.  Si ambas condiciones son verdaderas, el correo será movido a la carpeta/etiqueta **"linkedin"** y se eliminará de tu bandeja de entrada.
+3.  Si no, el flujo terminará y el correo permanecerá en tu bandeja de entrada.
+
+---
+
+## 📚 Recursos y Referencias
+* **Documentación de N8N:** [Instalación con Docker](https://docs.n8n.io/hosting/installation/docker/)
+* **Video Tutorial:** [N8N Beginner Crash Course](https://www.youtube.com/watch?v=3VqVf0N0bcs)
+* **Google Gemini:** [Página Oficial de Gemini](https://gemini.google.com/)
+
 ### 2. Iniciar N8N con Docker
 
 En tu terminal, navega a la carpeta del proyecto y ejecuta:
