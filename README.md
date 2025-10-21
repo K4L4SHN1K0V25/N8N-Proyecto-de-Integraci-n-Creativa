@@ -2,8 +2,7 @@
 
 Este proyecto es una solución de automatización que utiliza **N8N** y la inteligencia artificial de **Google Gemini** para clasificar automáticamente correos electrónicos de Gmail. El flujo de trabajo está diseñado específicamente para identificar alertas de empleo de LinkedIn que contengan una palabra clave y moverlas a una carpeta designada, limpiando así la bandeja de entrada.
 
-![Flujo<img width="1303" height="448" alt="Captura de pantalla 2025-10-20 191609" src="https://github.com/user-attachments/assets/89672922-5ab9-4c61-8829-4213b1c1b41d" />
- de Trabajo Completo N8N](URL_DE_TU_IMAGEN_DEL_FLUJO_COMPLETO)
+<img width="1303" height="448" alt="Captura de pantalla 2025-10-20 191609" src="https://github.com/user-attachments/assets/f34a0c2e-598b-41cf-9c4e-1c01651f1810" />
 
 ---
 
