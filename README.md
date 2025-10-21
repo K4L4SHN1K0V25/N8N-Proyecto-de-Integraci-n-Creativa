@@ -50,7 +50,7 @@ Primero, obtén los archivos de este repositorio, que incluyen:
 
 * Esto iniciará una instancia de N8N. Puedes acceder a ella en tu navegador visitando `http://localhost:5678`.
 
-![N8N ejecutándose en Docker](URL_DE_TU_IMAGEN_DE_DOCKER_LOGS)
+<img width="1361" height="681" alt="Captura de pantalla 2025-10-20 171557" src="https://github.com/user-attachments/assets/a684050d-eaff-4d8e-90de-6d4d8919d2a8" />
 
 ### 3. Configurar las Credenciales en N8N
 Necesitarás configurar dos tipos de credenciales.
