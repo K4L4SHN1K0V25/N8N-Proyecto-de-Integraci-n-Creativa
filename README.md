@@ -48,7 +48,11 @@ Primero, obtén los archivos de este repositorio, que incluyen:
 * `docker-compose.yml` (para iniciar N8N)
 * `README.md` (este archivo)
 
-* Esto iniciará una instancia de N8N. Puedes acceder a ella en tu navegador visitando `http://localhost:5678`.
+### 2. Iniciar N8N con Docker
+
+En tu terminal, navega a la carpeta del proyecto y ejecuta:
+
+docker-compose up -d
 
 <img width="1361" height="681" alt="Captura de pantalla 2025-10-20 171557" src="https://github.com/user-attachments/assets/a684050d-eaff-4d8e-90de-6d4d8919d2a8" />
 
