@@ -60,7 +60,7 @@ Necesitarás configurar dos tipos de credenciales.
 * Busca y selecciona **Google Gemini (PaLM) API**.
 * Pega la clave de API que obtuviste de Google AI Studio.
 
-![Configuración de Credencial de Gemini](URL_DE_TU_IMAGEN_DE_GEMINI_CREDENTIALS)
+<img width="960" height="514" alt="Captura de pantalla 2025-10-20 173146" src="https://github.com/user-attachments/assets/84a9e37a-7adb-42c4-a58f-0707c5ee8280" />
 
 #### b) Credencial de Gmail (OAuth 2.0)
 Este es el paso más complejo. Deberás crear credenciales OAuth en la [Consola de Google Cloud](https://console.cloud.google.com/).
